@@ -4,22 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/06f4c2685f.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-    <div class="card text-center">
-  <div class="card-header">
-    Featured
-  </div>
-        <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-        </d
+<div class="card text-center">
+    <div class="card-header">
+      <p class="d-flex justify-content-start">Payment form example</p>
     </div>
-  <div class="card-footer text-body-secondary">
-    2 days ago
+  
+  <div class="card-body">
+    
+    <div>
+      <p class="d-flex justify-content-start" style="font-size: 15px; font-weight: 500; padding-left: 5px;"></p>
+    </div>
+    
+    <div>
+      <p class="alert alert-danger p-2 d-flex justify-content-start align-items-center" style="font-size: 15px;">some fields are missing</p>
+    </div> 
+
+    <form class="d-flex flex-row">
+      
+      <div class="col-4 d-flex flex-column me-4">
+        <span class="d-flex justify-content-start">Card#</span>
+        <input type="text" name="card" placeholder="XXXXXXXXXXXX"/>
+      </div>
+
+      <div class="col-4 d-flex flex-column me-3">
+        <span class="d-flex justify-content-start">CVC#</span>
+        <input type="text" name="cvc" placeholder="0000"/>
+      </div>
+
+      <div class="col-4 d-flex flex-column">
+        <span class="d-flex justify-content-start">Amount</span>
+        <div class="d-flex">$<input type="text" name="amount" placeholder="Amount"/></div>              
+      </div>
+
+    </form>
+
   </div>
+  
+  
+  <div class="card-footer text-body-secondary"> aqui el footer
+    
+  </div>
+  
 </div>
 
 
