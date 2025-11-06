@@ -16,8 +16,10 @@
         <h5 class="d-flex justify-content-start fw-bold">Payment for example</h5>
       </div>
 
+      
       <!--AREA DEL FORMULARIO-->
       <div class="card-body">
+        
         <p class="card-title alert alert-danger d-flex justify-content-start p-2 fs-6" style="border-radius: 2px;">Some field are missing</p>
 
         <form action="#" method="post">
@@ -29,7 +31,14 @@
 
             <div class="col-4 d-flex flex-column align-items-start ">
               <span>CVC #</span>
-              <input type="number" name="cvc" class="form-control" placeholder="0000"/>
+              <input 
+              type="text" 
+              name="cvc" 
+              inputmode="numeric"
+              maxlength="4"
+              pattern="[0-9]{3-4}"
+              class="form-control" placeholder="0000"              
+              />
             </div>
           </div>
         </form>
