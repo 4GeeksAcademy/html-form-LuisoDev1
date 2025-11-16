@@ -3,6 +3,7 @@
 .usuario-no-selecciona{
     user-select: none;
 }
+
 span {
     font-size: 12px;
     font-weight: 500;
@@ -27,10 +28,11 @@ select option {
     height: 25px;
     padding: 3px;
     border-radius: 3px;
+    display:flex;
+    text-align: center;
+    justify-content: space-between;
 }
 
 #contenedor-iconos span {
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
+    color: aliceblue;
 }
