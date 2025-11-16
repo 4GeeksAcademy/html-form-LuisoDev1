@@ -19,6 +19,10 @@ input::placeholder {
     font-size: 12px;
 }
 
+select {
+    width: 190px;
+}
+
 select option {
     font-size: 12px;
 }
