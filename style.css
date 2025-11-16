@@ -1,0 +1,36 @@
+
+
+.usuario-no-selecciona{
+    user-select: none;
+}
+span {
+    font-size: 12px;
+    font-weight: 500;
+    user-select: none;
+    margin-bottom: 6px;
+}
+
+input {
+    height: 25px;
+}
+
+input::placeholder {
+    font-size: 12px;
+}
+
+select option {
+    font-size: 12px;
+}
+
+#contenedor-iconos {
+    width: 200px;
+    height: 25px;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+#contenedor-iconos span {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
