@@ -1,4 +1,6 @@
-
+body {
+    background-color: rgb(0, 0, 0);
+}
 
 .usuario-no-selecciona{
     user-select: none;
