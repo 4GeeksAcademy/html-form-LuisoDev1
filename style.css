@@ -4,20 +4,16 @@
     user-select: none;
 }
 
-span {
-    font-size: 12px;
-    font-weight: 500;
-    user-select: none;
-    margin-bottom: 6px;
-}
 
 input {
     height: 25px;
 }
 
+
 input::placeholder {
     font-size: 12px;
 }
+
 
 select {
     width: 190px;
@@ -27,6 +23,28 @@ select option {
     font-size: 12px;
 }
 
+
+ol {
+    list-style-type: none;
+}
+
+
+.estilo-lista::before {
+    content: "⚪";
+    color: aliceblue;
+    font-size: 7px;
+}
+
+
+li {
+    font-size: 12px;
+    font-weight: 500;
+    user-select: none;
+    margin-bottom: 6px;
+    color: whitesmoke;
+}
+
+
 #contenedor-iconos {
     width: 200px;
     height: 25px;
@@ -34,9 +52,22 @@ select option {
     border-radius: 3px;
     display:flex;
     text-align: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-#contenedor-iconos span {
-    color: aliceblue;
+
+.card-footer {
+    display: flex;
+    justify-content: end;
+}
+
+.boton-cancel {
+    width: fit-content;
+    height: fit-content;
+    margin-right: 6px;
+}
+
+.boton-send {
+    width: fit-content;
+    height: fit-content;
 }
