@@ -1,7 +1,6 @@
 body {
     background-color: rgb(0, 0, 0);
 }
-
 .usuario-no-selecciona{
     user-select: none;
 }
@@ -10,51 +9,31 @@ body {
 input {
     height: 25px;
 }
-
-
 input::placeholder {
     font-size: 12px;
 }
-
-
 select {
     width: 190px;
 }
-
 select option {
     font-size: 12px;
 }
 
 
-ol {
-    list-style-type: none;
-}
-
-
-.estilo-lista::before {
-    content: "⚪";
-    color: aliceblue;
-    font-size: 7px;
-}
-
-
-li {
-    font-size: 12px;
-    font-weight: 500;
-    user-select: none;
-    margin-bottom: 6px;
-    color: whitesmoke;
-}
-
-
-#contenedor-iconos {
+.contenedor-iconos {
     width: 200px;
     height: 25px;
-    padding: 3px;
     border-radius: 3px;
+    padding: 0;
     display:flex;
-    text-align: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    background-color: #807b7b;
+    color: aliceblue;
+}
+.fa-brands {
+    margin-right: 10px;
 }
 
 
@@ -62,13 +41,11 @@ li {
     display: flex;
     justify-content: end;
 }
-
 .boton-cancel {
     width: fit-content;
     height: fit-content;
     margin-right: 6px;
 }
-
 .boton-send {
     width: fit-content;
     height: fit-content;

@@ -22,7 +22,7 @@
         <p class="card-title alert alert-danger d-flex justify-content-start p-2 fs-6 usuario-no-selecciona" style="border-radius: 2px;">Some field are missing</p>
         
         <!--AREA DE LOS DATOS DE LA TARJETA BANCARIA-->
-        <form id="formularioBancario" action="#" method="post">
+        <form id="formulario" action="#" method="post">
           <div class="row">
             <!-- IMPUT PARA LA CARD-->
             <div class="col-4 d-flex flex-column align-items-start">
@@ -112,13 +112,22 @@
           <!--DIV CONTENEDOR DE LOS ICONOS DE TARJETAS Y EL TEXTAREA-->
           <div class="row mt-4">
             <div class="col-6 d-flex flex-column justify-content-start align-items-start">
-              <span>We accept:</span>
-              <ol id="contenedor-iconos" class="d-flex justify-content-evenly" style="background-color: rgb(102, 100, 100);">
-                <li class="estilo-lista"><i class="fa-brands fa-cc-mastercard"></i></li>
-                <li class="estilo-lista"><i class="fa-brands fa-cc-visa"></i></li>
-                <li class="estilo-lista"><i class="fa-brands fa-cc-amex"></i></li>
-                <li class="estilo-lista"><i class="fa-brands fa-cc-paypal"></i></li>
-              </ol>
+              <span>
+                We accept:
+              </span>
+              <div class="contenedor-iconos" class="d-flex justify-content-evenly g-2 align-items-center" >
+                <input type="radio" name="tarjetaPay" value="mastercard" />
+                <i class="fa-brands fa-cc-mastercard"></i>
+
+                <input type="radio" name="tarjetaPay" value="visa" />
+                <i class="fa-brands fa-cc-visa"></i>
+
+                <input type="radio" name="tarjetaPay" value="amex" />
+                <i class="fa-brands fa-cc-amex"></i>
+
+                <input type="radio" name="tarjetaPay" value="paypal" />
+                <i class="fa-brands fa-cc-paypal"></i>
+              </div>             
             </div>
 
               <div class="col-6 d-flex flex-column align-items-start">
@@ -135,10 +144,10 @@
       <!--INICIO DEL FOOTER-->
       <div class="card-footer text-body-secondary usuario-no-selecciona">
         <div>
-          <button type="submit" name="#" form="formularioBancario" class="boton-cancel btn btn-secondary">Cancel</button>
+          <button type="submit" form="formulario" class="boton-cancel btn btn-secondary">Cancel</button>
         </div>
         <div>
-          <button type="reset" form="formularioBancario" class="boton-send btn btn-primary">Send</button>
+          <button type="reset" form="formulario" class="boton-send btn btn-primary">Send</button>
         </div>        
       </div>
     </div>
